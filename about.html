@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About / Contact – Skill First Labs</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="logo-dot"></span>Skill First Labs</a>
+    <nav class="nav">
+      <a href="taxonomy.html">Skill Taxonomy</a>
+      <a href="inventory.html">Skill Inventory</a>
+      <a href="validation.html">Validation</a>
+      <a class="btn btn-primary active" href="about.html">About / Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <header class="page-header">
+      <h1>About Skill First Labs</h1>
+      <p>Skill First Labs is a SaaS platform for academic institutions to map student skills to jobs, unify validation, and optimize curriculum decisions.</p>
+    </header>
+
+    <section class="card">
+      <h2>Our Mission</h2>
+      <p>Bridge academia and industry by making skills visible, verifiable, and actionable, from classroom to career.</p>
+    </section>
+
+    <section class="card">
+      <h2>Contact Us</h2>
+      <form class="form grid-2" onsubmit="event.preventDefault(); alert('Thank you! We will reach out soon.');">
+        <label>Name
+          <input type="text" class="input" placeholder="Full name" required />
+        </label>
+        <label>Email
+          <input type="email" class="input" placeholder="name@example.com" required />
+        </label>
+        <label class="grid-span-2">Message
+          <textarea class="input" rows="4" placeholder="How can we help?" required></textarea>
+        </label>
+        <div class="grid-span-2">
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Skill First Labs. All rights reserved.</p>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

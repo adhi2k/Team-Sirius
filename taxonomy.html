@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skill Taxonomy – Skill First Labs</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="logo-dot"></span>Skill First Labs</a>
+    <nav class="nav">
+      <a class="active" href="taxonomy.html">Skill Taxonomy</a>
+      <a href="inventory.html">Skill Inventory</a>
+      <a href="validation.html">Validation</a>
+      <a class="btn btn-primary" href="about.html">About / Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <header class="page-header">
+      <h1>Skill Taxonomy</h1>
+      <p>AI-assisted skill library with standardized categories, sub-categories, types, and proficiency definitions for consistent assessment and reporting.</p>
+    </header>
+
+    <section class="card">
+      <h2>Search & Filter by Skill</h2>
+      <div class="toolbar">
+        <input type="search" class="input" placeholder="Search skills (e.g., Data Visualization)" />
+        <select class="input">
+          <option>All Categories</option>
+          <option>Technical</option>
+          <option>Interpersonal</option>
+          <option>Leadership</option>
+        </select>
+        <select class="input">
+          <option>All Types</option>
+          <option>Hard</option>
+          <option>Soft</option>
+          <option>Tool</option>
+        </select>
+        <button class="btn btn-primary">Search</button>
+      </div>
+      <div class="grid-3">
+        <div class="skill-chip">Python Programming</div>
+        <div class="skill-chip">Data Visualization</div>
+        <div class="skill-chip">Public Speaking</div>
+        <div class="skill-chip">Cloud Computing</div>
+        <div class="skill-chip">Project Management</div>
+        <div class="skill-chip">SQL</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Filter by Job (Super Admin)</h2>
+      <div class="toolbar">
+        <select class="input">
+          <option>Job Role</option>
+          <option>Data Analyst</option>
+          <option>Software Engineer</option>
+          <option>Product Manager</option>
+        </select>
+        <select class="input">
+          <option>Department</option>
+          <option>CSE</option>
+          <option>ECE</option>
+          <option>Management</option>
+        </select>
+        <button class="btn">Apply</button>
+      </div>
+      <p class="muted">Super Admins can map required skills per job to streamline curricula and assessments.</p>
+    </section>
+
+    <section class="card">
+      <h2>Add New Skill</h2>
+      <form class="form grid-2">
+        <label>Category
+          <select class="input" required>
+            <option>Technical</option>
+            <option>Interpersonal</option>
+            <option>Leadership</option>
+            <option>Business</option>
+          </select>
+        </label>
+        <label>Sub-category
+          <input class="input" placeholder="e.g., Data Analytics" required />
+        </label>
+        <label>Skill Type
+          <select class="input">
+            <option>Hard</option>
+            <option>Soft</option>
+            <option>Tool</option>
+          </select>
+        </label>
+        <label>Skill Name
+          <input class="input" placeholder="e.g., SQL Joins" required />
+        </label>
+        <label class="grid-span-2">Description
+          <textarea class="input" rows="3" placeholder="Short, clear definition and outcomes"></textarea>
+        </label>
+        <label>Visibility
+          <select class="input">
+            <option>Public</option>
+            <option>Department Only</option>
+            <option>Private</option>
+          </select>
+        </label>
+        <label>Proficiency Levels
+          <select class="input">
+            <option>5-band (Low → Exceptional)</option>
+            <option>3-band (Basic → Advanced)</option>
+          </select>
+        </label>
+        <div class="grid-span-2">
+          <button class="btn btn-primary" type="submit">Add Skill</button>
+        </div>
+      </form>
+      <p class="muted">Keep taxonomy consistent with standardized categories, sub-skills, and levels for clarity and analytics quality.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Skill First Labs. All rights reserved.</p>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

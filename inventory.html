@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skill Inventory – Skill First Labs</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="logo-dot"></span>Skill First Labs</a>
+    <nav class="nav">
+      <a href="taxonomy.html">Skill Taxonomy</a>
+      <a class="active" href="inventory.html">Skill Inventory</a>
+      <a href="validation.html">Validation</a>
+      <a class="btn btn-primary" href="about.html">About / Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <header class="page-header">
+      <h1>Skill Inventory (Admin)</h1>
+      <p>Filter inventory by Department, Year, Skill Category, and Job Role to view proficiency bands, drill into details, and plan interventions.</p>
+    </header>
+
+    <section class="card">
+      <h2>Filters</h2>
+      <div class="toolbar">
+        <select class="input">
+          <option>Department</option>
+          <option>CSE</option>
+          <option>ECE</option>
+          <option>MECH</option>
+          <option>Management</option>
+        </select>
+        <select class="input">
+          <option>Year</option>
+          <option>I</option><option>II</option><option>III</option><option>IV</option>
+        </select>
+        <select class="input">
+          <option>Skill Category</option>
+          <option>Technical</option><option>Interpersonal</option><option>Leadership</option>
+        </select>
+        <select class="input">
+          <option>Job Role</option>
+          <option>Data Analyst</option><option>Software Engineer</option><option>Product Manager</option>
+        </select>
+        <button class="btn">Apply</button>
+      </div>
+    </section>
+
+    <section class="grid-3">
+      <div class="card skill-card">
+        <div class="skill-card-header">
+          <h3>Python Programming</h3>
+          <span class="band band-high">🟢 High</span>
+        </div>
+        <p class="muted">Avg score 72 | N=240</p>
+        <div class="pill-legend">
+          <span>🔴 Low</span><span>🟠 Below Avg</span><span>🟡 Avg</span><span>🟢 High</span><span>🔵 Exceptional</span>
+        </div>
+        <a class="link" href="#detail-python">View details</a>
+      </div>
+
+      <div class="card skill-card">
+        <div class="skill-card-header">
+          <h3>Data Visualization</h3>
+          <span class="band band-avg">🟡 Average</span>
+        </div>
+        <p class="muted">Avg score 58 | N=240</p>
+        <div class="pill-legend">
+          <span>🔴 Low</span><span>🟠 Below Avg</span><span>🟡 Avg</span><span>🟢 High</span><span>🔵 Exceptional</span>
+        </div>
+        <a class="link" href="#detail-dv">View details</a>
+      </div>
+
+      <div class="card skill-card">
+        <div class="skill-card-header">
+          <h3>Public Speaking</h3>
+          <span class="band band-low">🟠 Below Average</span>
+        </div>
+        <p class="muted">Avg score 44 | N=180</p>
+        <div class="pill-legend">
+          <span>🔴 Low</span><span>🟠 Below Avg</span><span>🟡 Avg</span><span>🟢 High</span><span>🔵 Exceptional</span>
+        </div>
+        <a class="link" href="#detail-ps">View details</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Skill Detail View</h2>
+      <div class="grid-2">
+        <div>
+          <h3>Analytics</h3>
+          <ul class="list">
+            <li>Performance distribution across bands</li>
+            <li>Skill priority and curriculum alignment</li>
+            <li>Similar skills and cross-skill impact</li>
+          </ul>
+        </div>
+        <div class="chart-wrap">
+          <div class="donut" data-segments="12,26,34,22,6" data-colors="#ef4444,#f59e0b,#eab308,#22c55e,#3b82f6" aria-label="Distribution: Low 12%, Below Average 26%, Average 34%, High 22%, Exceptional 6%" role="img"></div>
+          <div class="legend tight">
+            <span><span class="dot" style="background:#ef4444"></span>Low</span>
+            <span><span class="dot" style="background:#f59e0b"></span>Below Avg</span>
+            <span><span class="dot" style="background:#eab308"></span>Average</span>
+            <span><span class="dot" style="background:#22c55e"></span>High</span>
+            <span><span class="dot" style="background:#3b82f6"></span>Exceptional</span>
+          </div>
+        </div>
+      </div>
+      <p class="muted">Detail pages are designed for quick diagnosis and action planning with clear band legends and related skills.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Skill First Labs. All rights reserved.</p>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>
